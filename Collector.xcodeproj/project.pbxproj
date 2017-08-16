@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		184F62CA1F4258DE0009D62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F62C91F4258DE0009D62C /* AppDelegate.swift */; };
-		184F62CC1F4258DE0009D62C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F62CB1F4258DE0009D62C /* ViewController.swift */; };
 		184F62CF1F4258DE0009D62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F62CD1F4258DE0009D62C /* Main.storyboard */; };
 		184F62D21F4258DE0009D62C /* Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184F62D01F4258DE0009D62C /* Collector.xcdatamodeld */; };
 		184F62D41F4258DE0009D62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184F62D31F4258DE0009D62C /* Assets.xcassets */; };
 		184F62D71F4258DE0009D62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184F62D51F4258DE0009D62C /* LaunchScreen.storyboard */; };
+		1876F0DE1F44A28200947882 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876F0DD1F44A28200947882 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		184F62C61F4258DE0009D62C /* Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184F62C91F4258DE0009D62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		184F62CB1F4258DE0009D62C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		184F62CE1F4258DE0009D62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184F62D11F4258DE0009D62C /* Collector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collector.xcdatamodel; sourceTree = "<group>"; };
 		184F62D31F4258DE0009D62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184F62D61F4258DE0009D62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184F62D81F4258DE0009D62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1876F0DC1F439BA300947882 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1876F0DD1F44A28200947882 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				184F62C81F4258DE0009D62C /* Collector */,
+				1876F0DC1F439BA300947882 /* README.md */,
 				184F62C71F4258DE0009D62C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				184F62C91F4258DE0009D62C /* AppDelegate.swift */,
-				184F62CB1F4258DE0009D62C /* ViewController.swift */,
+				1876F0DD1F44A28200947882 /* AddItemViewController.swift */,
+				184F62D01F4258DE0009D62C /* Collector.xcdatamodeld */,
 				184F62CD1F4258DE0009D62C /* Main.storyboard */,
 				184F62D31F4258DE0009D62C /* Assets.xcassets */,
 				184F62D51F4258DE0009D62C /* LaunchScreen.storyboard */,
 				184F62D81F4258DE0009D62C /* Info.plist */,
-				184F62D01F4258DE0009D62C /* Collector.xcdatamodeld */,
 			);
 			path = Collector;
 			sourceTree = "<group>";
@@ -139,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				184F62D21F4258DE0009D62C /* Collector.xcdatamodeld in Sources */,
-				184F62CC1F4258DE0009D62C /* ViewController.swift in Sources */,
 				184F62CA1F4258DE0009D62C /* AppDelegate.swift in Sources */,
+				1876F0DE1F44A28200947882 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
