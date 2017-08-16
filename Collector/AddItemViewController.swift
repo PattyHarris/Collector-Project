@@ -26,6 +26,11 @@ class AddItemViewController: UIViewController,
     }
 
     @IBAction func cameraButtonDidTap(_ sender: Any) {
+        // This only works on a real phone - so once we go through
+        // how to put the app on "apple", we can download this
+        // on our phone to test later.
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func folderButtonDidTap(_ sender: Any) {
@@ -44,9 +49,50 @@ class AddItemViewController: UIViewController,
             imagePicker.dismiss(animated: true, completion: nil)
         }
         
+        // I don't think we have the code yet for picking a photo taken using
+        // the phone camera.
+        
     }
     
     @IBAction func addButtonDidTap(_ sender: Any) {
+        // Get the managed object context
+        if let context  =
+            ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) {
+            
+            let item = Item(entity: Item.entity(), insertInto: context)
+            item.title = itemTextField.text
+            
+            if let image = itemImageView.image {
+                
+                // We need to turn this object into a Data? object (optional Data..)
+                if let imageData = UIImagePNGRepresentation(image) {
+                    item.image = imageData
+                }
+            }
+            
+            // This can also be handled this way:
+            // try? context.save
+            // But then there's no handling the failure case...
+            // To get the data to "reload" we need to handle
+            // viewWillAppear.
+            do {
+                try context.save()
+            }
+            catch {
+                self.showAlert(message: "Data could not be saved!  Please try again.")
+            }
+            
+            navigationController?.popViewController(animated: true)
+        }
+
     }
     
+    func showAlert(message: String) {
+        let alertController = UIAlertController(title: "Oops!", message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
 }
