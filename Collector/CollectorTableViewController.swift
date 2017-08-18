@@ -96,7 +96,7 @@ class CollectorTableViewController: UITableViewController {
             cell.imageView?.image = UIImage(data: imageData)
         }
 
-        return cell
+        return cell 
     }
 
     // Allow conditional editing of cells.  Even though we're only using "delete", you
