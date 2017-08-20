@@ -2,7 +2,9 @@
 
 1. This project uses an icon from Camera by Alfa Design from the Noun Project.
     After adding the png to sketch to fill in some colors, we used Aspect Fit to resize the image on the view.
+
 2. Some other notes my future reference:
+
     a. To add the navigation items to a simple View Controller, first add a navigation item to anywhere on the view controller.
     You can then add bar button items to the view controller.
     
