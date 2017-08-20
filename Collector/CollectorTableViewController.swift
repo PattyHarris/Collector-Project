@@ -39,8 +39,8 @@ class CollectorTableViewController: UITableViewController {
                 let coreDataItems = try context.fetch(Item.fetchRequest()) as? [Item]
                 
                 if let coreDataItems = coreDataItems {
-                    // We can just set our ToDoItem array to the one given
-                    // to us by Core Data - note that toDos is now [ToDoItem]
+                    // We can just set our Item array to the one given
+                    // to us by Core Data.
                     self.items = coreDataItems
                 }
                 
