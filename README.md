@@ -11,13 +11,17 @@
     
         b. The layout for the image view needs to ensure that when the keypad is shown, it doesn't
         cover the Add button.  Instead of forcing the image to be a 1:1 ratio, we changed
-        the ratio to 8:5, keeping the sides at their current spacing.
-    
+        the ratio to 8:5, keeping the sides at their current spacing.  To get this reatio,
+        control drag inside the ImageView and select Aspect Ratio.  So, for this
+        image view, layouts were 20 (left), 20 (right), and 20 (top) with the
+        aspect ratio (which we later changed to 8:5)
+        
         c. This instructor likes to use vertical spacing.  He uses the Horizontal
-        Spacing layout followed by Vertical Spacing to the control that's near the one you're working with.
+        Spacing layout followed by Vertical Spacing to the control what is near the
+        one you're working with.
     
-        d. Core Data: when storing images, make sure you use the "store exteranally" option.
-        Also, for both the title and image, thoptional feature is "off"
+        d. Core Data: when storing images, make sure you use the "store externally" option.
+        Also, for both the title and image, the optional feature is "off"
 
 ## Installing on your phone
 

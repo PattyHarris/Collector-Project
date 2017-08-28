@@ -26,11 +26,15 @@ class AddItemViewController: UIViewController,
     }
 
     @IBAction func cameraButtonDidTap(_ sender: Any) {
-        // This only works on a real phone - so once we go through
-        // how to put the app on "apple", we can download this
-        // on our phone to test later.
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+        // Again, this only works on a real phone...instead of crashing
+        // I chose to make this work with an alert...
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.sourceType = .camera
+            present(imagePicker, animated: true, completion: nil)
+        }
+        else {
+            showAlert(message: "Device has no camera!")
+        }
     }
     
     @IBAction func folderButtonDidTap(_ sender: Any) {
